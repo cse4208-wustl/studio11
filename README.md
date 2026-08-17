@@ -94,9 +94,9 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
 10. In the source file where you defined `main`, change the function you defined in the previous exercise so that it returns by value the `std::unique_ptr` that is passed into it.
 
-   In `main`, assign the value returned by that function to the first `std::unique_ptr`, and then use the first `std::unique_ptr` to invoke the public virtual member function of the object to which it points.
+    In `main`, assign the value returned by that function to the first `std::unique_ptr`, and then use the first `std::unique_ptr` to invoke the public virtual member function of the object to which it points.
 
-   Build and run your program. In your answers, show the output the program produced.
+    Build and run your program. In your answers, show the output the program produced.
 
 ## Deliverables
 
