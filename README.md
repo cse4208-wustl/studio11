@@ -35,7 +35,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Build and run your program. In your answers, show your declaration of the class.
 
-3. In a source file you add to this repo, declare and define a public copy constructor for your class. It should initialize the private member variable from the source object's private member variable in the member-initialization list, and in the body it should print the addresses of the object being constructed and the object from which it is being copy-constructed.
+3. Declare a public copy constructor for your class in the header file and define it in a new source file. The copy constructor should initialize the private member variable from the source object's private member variable in the member-initialization list, and in the body it should print the addresses of the object being constructed and the object from which it is being copy-constructed.
 
    Try to build your program. It should fail because the presence of the copy constructor prevents the compiler from automatically synthesizing a default constructor.
 
