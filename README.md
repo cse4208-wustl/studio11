@@ -70,7 +70,9 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Compile and run your program. In your answers, show the output it produced.
 
-6. In `main`, declare a `std::unique_ptr` parameterized with your class type and initialize it with a call to `new` that dynamically constructs an object of your class type from a C-style string. Then declare another `std::unique_ptr` parameterized with your class type and attempt to initialize it from the first `std::unique_ptr`.
+6. Remove (or comment out) the contents of main except for the return statement.
+  
+   In `main`, declare a `std::unique_ptr` parameterized with your class type and initialize it with a call to `new` that dynamically constructs an object of your class type from a C-style string. Then declare another `std::unique_ptr` parameterized with your class type and attempt to initialize it from the first `std::unique_ptr`.
 
    Try to build your program. It should fail because the copy constructor for `std::unique_ptr` is deleted.
 
@@ -78,7 +80,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Build and run your program. In your answers, show the output that was produced.
 
-7. In the header and source files for your class, declare and define a public virtual member function that prints the object's address and its private member variable. Also modify the destructor declaration so that it is virtual as well.
+9. In the header and source files for your class, declare and define a public virtual member function that prints the object's address and its private member variable. Also modify the destructor declaration so that it is virtual as well.
 
    In the source file where you define `main`, define a function with `void` return type that takes a `std::unique_ptr` to your class type by value, and uses it to invoke the public virtual member function of the object to which the `std::unique_ptr` points.
 
@@ -90,7 +92,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Build and run your program. In your answers, show the output that was produced.
 
-8. In the source file where you defined `main`, change the function you defined in the previous exercise so that it returns by value the `std::unique_ptr` that is passed into it.
+10. In the source file where you defined `main`, change the function you defined in the previous exercise so that it returns by value the `std::unique_ptr` that is passed into it.
 
    In `main`, assign the value returned by that function to the first `std::unique_ptr`, and then use the first `std::unique_ptr` to invoke the public virtual member function of the object to which it points.
 
