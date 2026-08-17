@@ -70,9 +70,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Compile and run your program. In your answers, show the output it produced.
 
-6. Remove the contents of `main` except for the statement at the end that returns a success value.
-
-   In `main`, declare a `std::unique_ptr` parameterized with your class type and initialize it with a call to `new` that dynamically constructs an object of your class type from a C-style string. Then declare another `std::unique_ptr` parameterized with your class type and attempt to initialize it from the first `std::unique_ptr`.
+6. In `main`, declare a `std::unique_ptr` parameterized with your class type and initialize it with a call to `new` that dynamically constructs an object of your class type from a C-style string. Then declare another `std::unique_ptr` parameterized with your class type and attempt to initialize it from the first `std::unique_ptr`.
 
    Try to build your program. It should fail because the copy constructor for `std::unique_ptr` is deleted.
 
